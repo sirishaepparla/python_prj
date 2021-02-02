@@ -1,0 +1,13 @@
+tdc_tests         1
+
+tests_modules
+
+end
+
+description
+	Tests TDC Project Code
+end
+
+requires
+	tdc_inca_import_tests
+end

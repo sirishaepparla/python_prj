@@ -1,0 +1,18 @@
+#% text_encoding = iso8859_1
+_package user
+
+_pragma(classify_level=debug,topic=unit_testing)
+def_slotted_exemplar(:tdc_munit_tests_suite,
+{},
+{:test_case})
+$
+
+_pragma(classify_level=debug,topic=unit_testing)
+_method tdc_munit_tests_suite.suite(_optional exclude_slow_methods? )
+
+	suite << munit_test_suite.new( )
+        suite.add_test(user:tdc_inca_import_test_suite)
+
+        _return suite
+_endmethod
+$
